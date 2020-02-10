@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">book addiction</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">shopping card<span class="sr-only">(current)</span>
+                            <span id="shopCartNumber" class="badge badge-pill badge-primary">0</span></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-12">
+                <div class="list-group my-5">
+                    <a href="#" onclick="return filter('all')" class="list-group-item list-group-item-action active">
+                        <center>ALL CATEGORIES</center>
+                    </a>
+                    <a onclick="return filter('educated')" class="list-group-item list-group-item-action">educated
+                        books</a>
+                    <a onclick="return filter('biographie')" class="list-group-item list-group-item-action">Biographies
+                        books</a>
+                    <a onclick="return filter('science')" class="list-group-item list-group-item-action">Science
+                        fiction & fantasy</a>
+
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="row">
+                    <!--card1-->
+
+                    <div id="mch9raya" class="science mydiv col-lg-4 col-md-6 mb-4">
+                        <div class="card my-5" style="width: 14rem;">
+                            <img src="./mediA/ASIMOV.jpeg" class="card-img-top" height="300px" alt="...">
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Asimov</h5>
+                                </a>
+
+                            </div>
+
+                            <div class="hj">
+                                <p id="soumjdid" class="mr-3">$45.99</p>
+                                <p id="soumeshih" class="">$90.99</p>
+                            </div>
+
+                            <hr class="my-0 mt-1">
+
+
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button onclick="addToCart('Asimov')" data-toggle="modal" data-target="#exampleModal"
+                                    class="btn btn-secondary btn-block">
+                                    add to card
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card2-->
+
+                    <div id="mch9ray" class="science mydiv col-lg-4 col-md-6 mb-4">
+                        <div class="card my-5" style="width: 14rem;">
+                            <img src="./media/THE.jpeg" height="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">D.Adams</h5>
+                                </a>
+
+                            </div>
+                            <div class="hj">
+                                <p id="soumjdid" class="mr-3">$45.99</p>
+                                <p id="soumeshih" class="">$90.99</p>
+                            </div>
+                            <hr class="my-0 mt-1">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button onclick="addToCart('D.Adams')" data-toggle="modal" data-target="#exampleModal"
+                                    class="btn btn-secondary btn-block">
+                                    add to card
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card3-->
+
+                    <div id="mch9ra" class="science mydiv col-lg-4 col-md-6 mb-4">
+                        <div class="card my-5" style="width: 14rem;">
+                            <img src="./media/AND.jpeg" height="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">T.M Andy Weir</h5>
+                                </a>
+
+                            </div>
+                            <div class="hj">
+                                <p id="soumjdid" class="mr-3">$45.99</p>
+                                <p id="soumeshih" class="">$90.99</p>
+                            </div>
+                            <hr class="my-0 mt-1">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button onclick="addToCart('T.M Andy weir')" data-toggle="modal"
+                                    data-target="#exampleModal" class="btn btn-secondary btn-block">
+                                    add to card
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card4-->
+
+                    <div id="e1" class="educated mydiv col-lg-4 col-md-6 mb-4">
+                        <div class="card my-5" style="width: 14rem;">
+                            <img src="./media/js.png" height="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">JS</h5>
+                                </a>
+
+                            </div>
+                            <div class="hj">
+                                <p id="soumjdid" class="mr-3">$45.99</p>
+                                <p id="soumeshih" class="">$90.99</p>
+                            </div>
+                            <hr class="my-0 mt-1">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button onclick="addToCart('JS')" data-toggle="modal" data-target="#exampleModal"
+                                    class="btn btn-block btn-secondary">
+                                    add to card
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card5-->
+
+                    <div id="e2" class="educated mydiv col-lg-4 col-md-6 mb-4">
+                        <div class="card my-5" style="width: 14rem;">
+                            <img src="./media/hts.jpg" height="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Html & Css</h5>
+                                </a>
+
+                            </div>
+                            <div class="hj">
+                                <p id="soumjdid" class="mr-3">$45.99</p>
+                                <p id="soumeshih" class="">$90.99</p>
+                            </div>
+                            <hr class="my-0 mt-1">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button onclick="addToCart('hTML & css')" data-toggle="modal"
+                                    data-target="#exampleModal" class="btn btn-secondary btn-block">
+                                    add to card
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card6-->
+
+                    <div id="e3" class="educated mydiv col-lg-4 col-md-6 mb-4">
+                        <div class="card my-5" style="width: 14rem;">
+                            <img src="./media/educa.jpg" height="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Educated</h5>
+                                </a>
+
+                            </div>
+                            <div class="hj">
+                                <p id="soumjdid" class="mr-3">$45.99</p>
+                                <p id="soumeshih" class="">$90.99</p>
+                            </div>
+                            <hr class="my-0 mt-1">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button onclick="addToCart('Educated')" data-toggle="modal" data-target="#exampleModal"
+                                    class="btn btn-secondary btn-block">
+                                    add to card
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card7-->
+
+                    <div id="mch9r" class="biographie mydiv col-lg-4 col-md-6 mb-4">
+                        <div class="card my-5" style="width: 14rem;">
+                            <img src="./media/steve jobs.jpeg" height="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">Steve Jobs</h5>
+                                </a>
+
+                            </div>
+                            <div class="hj">
+                                <p id="soumjdid" class="mr-3">$45.99</p>
+                                <p id="soumeshih" class="">$90.99</p>
+                            </div>
+                            <hr class="my-0 mt-1">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button onclick="addToCart('Steve Jobs')" data-toggle="modal"
+                                    data-target="#exampleModal" class="btn btn-secondary btn-block">
+                                    add to card
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card8-->
+
+                    <div id="mch9" class="biographie mydiv col-lg-4 col-md-6 mb-4">
+                        <div class="card my-5" style="width: 14rem;">
+                            <img src="./media/surely.jpeg" height="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">New York</h5>
+                                </a>
+
+                            </div>
+                            <div class="hj">
+                                <p id="soumjdid" class="mr-3">$45.99</p>
+                                <p id="soumeshih" class="">$90.99</p>
+                            </div>
+                            <hr class="my-0 mt-1">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button onclick="addToCart('New York')" data-toggle="modal" data-target="#exampleModal"
+                                    class="btn btn-secondary btn-block">
+                                    add to card
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--card9-->
+
+                    <div id="mch" class="biographie mydiv col-lg-4 col-md-6 mb-4">
+                        <div class="card my-5" style="width: 14rem;">
+                            <img src="./media/benjamin.jpeg" height="300px" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <a href="">
+                                    <h5 class="card-title">F.Benjamin</h5>
+                                </a>
+
+                            </div>
+                            <div class="hj">
+                                <p id="soumjdid" class="mr-3">$45.99</p>
+                                <p id="soumeshih" class="">$90.99</p>
+                            </div>
+                            <hr class="my-0 mt-1">
+                            <div class="card-body">
+                                <!-- Button trigger modal -->
+                                <button onclick="addToCart('F.Benjamin')" data-toggle="modal"
+                                    data-target="#exampleModal" class="btn btn-secondary btn-block">
+                                    add to card
+                                </button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./../projet/index.js"></script>
+            <script src="./control.js"></script>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Ajouter au panier !</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="modalBody">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">POURSUIVRE VOS
+                                ACHATS</button>
+                            <a href="./panier.html" type="button" class="btn btn-primary">FINALISER LA COMMANDE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./index.js"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

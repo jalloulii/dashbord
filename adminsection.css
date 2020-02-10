@@ -1,0 +1,25 @@
+
+ul {
+    list-style-type: none;
+}
+
+.dash{
+    display: flex;
+    margin-bottom: 7%;
+    color: black;
+    
+}
+.dash:hover{
+    text-decoration: none;
+}
+.coloneleft{
+    background-color: rgba(211, 211, 211, 0.644);
+width: 100%;
+
+}
+#prod{
+    width: max-content;
+}
+.table{
+    border: lightsteelblue 2px solid;
+}

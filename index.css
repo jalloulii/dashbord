@@ -1,0 +1,37 @@
+.hj{
+ 
+    display: flex;
+    justify-content: center;
+}
+#soumeshih{
+text-decoration: line-through;
+color:rgb(165, 165, 165);
+margin-top: 3%;
+}
+
+#soumjdid{
+  font-size: 23px;
+
+}
+h5{
+    text-align: center;
+}
+.jk{
+    width: auto;
+}
+.foot{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(0, 143, 255);
+    color: white;
+    text-align: center;
+    height: 7%;
+}
+.ffd{
+    padding-top: 0.7%;
+}
+.dispnone{
+    display: none;
+}
